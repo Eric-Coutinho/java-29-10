@@ -1,0 +1,17 @@
+package atividade;
+
+public class Cinema {
+	
+	private String Nome;
+	private String Endereco;
+	private String Cep;
+	
+	public Cinema() {
+		this.Nome = Nome;
+		this.Endereco = Endereco;
+		this.Cep = Cep;
+		
+		System.out.println("Novo Cinema instanciado");
+	}
+
+}

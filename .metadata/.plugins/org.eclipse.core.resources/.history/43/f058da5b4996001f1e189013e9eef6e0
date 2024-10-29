@@ -1,0 +1,14 @@
+package metodo_construtor;
+
+import atividade.Cinema;
+
+public class main {
+
+	public static void main(String[] args) {
+		Cinema cinema = new Cinema();
+		
+		System.out.println(cinema);
+
+	}
+
+}

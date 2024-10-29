@@ -1,0 +1,17 @@
+package metodo_construtor;
+
+import atividade.Cinema;
+
+public class main {
+
+	public static void main(String[] args) {
+		Cinema cinema = new Cinema();
+		
+		cinema.setId(0);
+		cinema.setNome("IMAX");
+		
+		System.out.println(cinema.getNome());
+
+	}
+
+}
