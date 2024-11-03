@@ -9,17 +9,28 @@ public class CinemaList {
         return Cinemas;
     }
 
+    public Cinema getCinemaById(int idCinema) {
+        if (Cinemas.length == 0) {
+            System.out.println("Nenhum cinema na lista.");
+        }
+        else {
+            for (int i = 0; i < Cinemas.length; i++) {
+                if (Cinemas[i].getId() == idCinema) {
+                    return Cinemas[i];
+                }
+            }
+        }
+        return null;
+    }
+
     public void printCinemas() {
         if (Cinemas.length == 0) {
             System.out.println("Nenhum cinema na lista.");
-        } else {
+        }
+        else {
             System.out.println("Lista de Cinemas:");
             for (int i = 0; i < Cinemas.length; i++) {
-                System.out.println();
-                System.out.println("ID: " + Cinemas[i].getId());
-                System.out.println("Nome " + Cinemas[i].getNome());
-                System.out.println("Endereco: " + Cinemas[i].getEndereco());
-                System.out.println("Cidade: " + Cinemas[i].getCidade());
+                Cinemas[i].printCinema();
             }
         }
     }

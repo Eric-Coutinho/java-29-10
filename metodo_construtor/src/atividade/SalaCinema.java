@@ -5,12 +5,21 @@ public class SalaCinema {
     private String Nome;
     private int Capacidade;
     private int idCinema;
+    private CinemaList cinemaList;
 
-    public SalaCinema(int id, String Nome, int Capacidade, int idCinema) {
+    public SalaCinema(int id, String Nome, int Capacidade, int idCinema, CinemaList cinemaList) {
         this.id = id;
         this.Nome = Nome;
         this.Capacidade = Capacidade;
         this.idCinema = idCinema;
+        this.cinemaList = cinemaList;
+
+        Cinema cinema = cinemaList.getCinemaById(this.idCinema);
+        if (cinema != null) {
+            cinema.AddNewSala(this);
+        } else {
+            throw new Error("Id do cinema não encontrado.");
+        }
     }
 
     public int getSalaCinemaId() { return id; }
@@ -39,4 +48,13 @@ public class SalaCinema {
         }
         throw new Error("Id do Cinema invalido.");
     }
+
+    public void printSalaCinema() {
+        System.out.println();
+        System.out.println("Id: " + this.id);
+        System.out.println("Nome: " + this.Nome);
+        System.out.println("Capacidade: " + this.Capacidade);
+        System.out.println("IdCinema: " + this.idCinema);
+    }
+
 }
