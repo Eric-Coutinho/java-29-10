@@ -1,4 +1,4 @@
-package atividade;
+package src.atividade;
 
 import java.util.Date;
 
@@ -13,13 +13,10 @@ public class Filme {
 	private String Genero;
 	private Date DataLancamento;
 	
-	public Filme() {
-		System.out.println("Novo filme instanciado (vazio)");
-	}
-	
 	public Filme(int id, String Nome, int Duracao, String Sinopse, String Diretor, Ator[] Atores, String Genero, Date DataLancamento) {
 		this.id = id;
 		this.Nome = Nome;
+		this.Duracao = Duracao;
 		this.Sinopse = Sinopse;
 		this.Diretor = Diretor;
 		this.Atores = Atores;
@@ -27,26 +24,10 @@ public class Filme {
 		this.DataLancamento = DataLancamento;
 	}
 	
-	public Filme(int id, String Nome, int Duracao, String Sinopse, String Diretor, String Genero) {
-		this.id = id;
-		this.Nome = Nome;
-		this.Sinopse = Sinopse;
-		this.Diretor = Diretor;
-		this.Genero = Genero;
-	}
-	
-	public Filme(int id, String Nome, int Duracao, String Sinopse, String Diretor, String Genero, Date DataLancamento) {
-		this.id = id;
-		this.Nome = Nome;
-		this.Sinopse = Sinopse;
-		this.Diretor = Diretor;
-		this.Genero = Genero;
-		this.DataLancamento = DataLancamento;
-	}
-	
 	public Filme(int id, String Nome, int Duracao, String Sinopse, String Diretor, String Genero, Ator[] Atores) {
 		this.id = id;
 		this.Nome = Nome;
+		this.Duracao = Duracao;
 		this.Sinopse = Sinopse;
 		this.Diretor = Diretor;
 		this.Genero = Genero;
@@ -88,7 +69,28 @@ public class Filme {
 	public void setId(int id) {
 		this.id = id;
 	}
-	
-	
 
+	public void setNome(String Nome) {
+		this.Nome = Nome;
+	}
+
+	public void setDuracao(int Duracao) {
+		this.Duracao = Duracao;
+	}
+
+	public void setSinopse(String Sinopse) {
+		this.Sinopse = Sinopse;
+	}
+
+	public void setDiretor(String Diretor) {
+		this.Diretor = Diretor;
+	}
+
+	public void setGenero(String Genero) {
+		this.Genero = Genero;
+	}
+
+	public void setAtores(Ator[] Atores) {
+		this.Atores = Atores;
+	}
 }

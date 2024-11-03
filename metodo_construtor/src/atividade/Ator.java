@@ -1,15 +1,19 @@
-package atividade;
+package src.atividade;
 
 public class Ator {
 	
 	private int id;
 	private String Nome;
-	private int Idade;
-	
-	public Ator(int id, String Nome, int Idade) {
+	private String Sexo;
+	private String Nacionalidade;
+	private String DataNasc;
+
+	public Ator(int id, String Nome, String Sexo, String Nacionalidade, String DataNasc) {
 		this.id = id;
 		this.Nome = Nome;
-		this.Idade = Idade;
+		this.Sexo = Sexo;
+		this.Nacionalidade = Nacionalidade;
+		this.DataNasc = DataNasc;
 		
 		System.out.println("Novo Ator instanciado.");
 	}
@@ -22,8 +26,16 @@ public class Ator {
 		return Nome;
 	}
 	
-	public int getAtorIdade() {
-		return Idade;
+	public String getAtorSexo() {
+		return Sexo;
+	}
+
+	public String getAtorNacionalidade() {
+		return Nacionalidade;
+	}
+
+	public String getAtorDataNasc() {
+		return DataNasc;
 	}
 	
 	public void setAtorId(int id) {
@@ -33,8 +45,16 @@ public class Ator {
 	public void setAtorNome(String Nome) {
 		this.Nome = Nome;
 	}
-	
-	public void getAtorIdade(int Idade) {
-		this.Idade = Idade;
+
+	public void setAtorSexo(String Sexo) {
+		this.Sexo = Sexo;
+	}
+
+	public void setAtorNacionalidade(String Nacionalidade) {
+		this.Nacionalidade = Nacionalidade;
+	}
+
+	public void setAtorDataNasc(String DataNasc) {
+		this.DataNasc = DataNasc;
 	}
 }
