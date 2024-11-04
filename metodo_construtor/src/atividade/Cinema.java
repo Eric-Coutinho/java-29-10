@@ -13,7 +13,6 @@ public class Cinema {
 		this.Nome = Nome;
 		this.Endereco = Endereco;
 		this.Cidade = Cidade;
-
 	}
 
 	public Cinema() { }

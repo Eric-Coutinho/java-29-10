@@ -11,9 +11,9 @@ public class Filme {
 	private String Diretor;
 	private Ator[] Atores;
 	private String Genero;
-	private Date DataLancamento;
+	private String DataLancamento;
 	
-	public Filme(int id, String Nome, int Duracao, String Sinopse, String Diretor, Ator[] Atores, String Genero, Date DataLancamento) {
+	public Filme(int id, String Nome, int Duracao, String Sinopse, String Diretor, Ator[] Atores, String Genero, String DataLancamento) {
 		this.id = id;
 		this.Nome = Nome;
 		this.Duracao = Duracao;
@@ -22,16 +22,6 @@ public class Filme {
 		this.Atores = Atores;
 		this.Genero = Genero;
 		this.DataLancamento = DataLancamento;
-	}
-	
-	public Filme(int id, String Nome, int Duracao, String Sinopse, String Diretor, String Genero, Ator[] Atores) {
-		this.id = id;
-		this.Nome = Nome;
-		this.Duracao = Duracao;
-		this.Sinopse = Sinopse;
-		this.Diretor = Diretor;
-		this.Genero = Genero;
-		this.Atores = Atores; 
 	}
 	
 	public int getId() {
@@ -62,7 +52,7 @@ public class Filme {
 		return Genero;
 	}
 	
-	public Date getDataLancamento() {
+	public String getDataLancamento() {
 		return DataLancamento;
 	}
 	

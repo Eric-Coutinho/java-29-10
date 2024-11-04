@@ -14,8 +14,6 @@ public class Ator {
 		this.Sexo = Sexo;
 		this.Nacionalidade = Nacionalidade;
 		this.DataNasc = DataNasc;
-		
-		System.out.println("Novo Ator instanciado.");
 	}
 	
 	public int getAtorId() {
